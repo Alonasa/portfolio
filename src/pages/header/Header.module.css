@@ -1,6 +1,7 @@
 .menu {
+	padding: 2%;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
@@ -18,8 +19,16 @@
 
 .menuList li {
 	padding: 15px;
-	width: 340px;
+	width: 100%;
 	box-sizing: border-box;
+}
+
+.menuLogo {
+	padding: 2%;
+}
+
+.menuTitle {
+	margin: 0;
 }
 
 .menuListLink {
@@ -53,24 +62,24 @@
 	transition: width .3s;
 }
 
-@media only screen and (min-width: 679px) {
-	.menuList {
-		order: 0;
+@media only screen and (min-width: 970px) {
+	.menu {
 		flex-direction: row;
+		align-items: baseline;
+	}
+
+	.menuList {
+		flex-direction: row;
+		order: 0;
+		width: 30%;
+	}
+
+	.menuRight {
+		flex-shrink: 1;
 	}
 
 	.menuList li {
-		width: auto;
-	}
-}
-
-@media only screen and (min-width: 760px) {
-	.menuTitle {
-		padding: 2%;
-	}
-
-	.menuList li {
-		padding: 20px;
+		padding: 3%;
 		width: auto;
 	}
 
