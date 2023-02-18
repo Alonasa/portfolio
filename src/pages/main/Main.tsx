@@ -3,7 +3,7 @@ import React from 'react';
 export const Main = () => {
   return (
 	<div>
-	  Main Content
+	  Main Content jf
 	</div>
   );
 };
