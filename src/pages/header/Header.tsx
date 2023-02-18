@@ -1,19 +1,19 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css'
 
 export const Header = () => {
   return (
 	<nav className={styles.menu}>
 	  <ul className={styles.menuList}>
-	  <li><a className={styles.menuListLink} href={'#'}> Skills</a></li>
-	  <li><a className={styles.menuListLink} href={'#'}> Portfolio</a></li>
+	  <li><NavLink to={'skills'} className={({isActive})=>(isActive? styles.menuListLinkActive : styles.menuListLink)}> Skills</NavLink></li>
+	  <li><NavLink to={'portfolio'} className={({isActive})=>(isActive? styles.menuListLinkActive : styles.menuListLink)}> Portfolio</NavLink></li>
 	  </ul>
 	  <div className={styles.menuTitle}>
-		<h1><a className={styles.menuListLink}>Alona Skrypnyk</a></h1>
+		<h1><NavLink to={''} className={({isActive})=>(isActive? styles.menuListLinkActive : styles.menuListLink)}>Alona Skrypnyk</NavLink></h1>
 	  </div>
 	  <ul className={styles.menuList}>
-		<li><a className={styles.menuListLink} href={'#'}> Contacts</a></li>
-		<li><a className={styles.menuListLink} href={'#'}> Make an offer</a></li>
+		<li><NavLink to={'contacts'} className={({isActive})=>(isActive? styles.menuListLinkActive : styles.menuListLink)}> Contacts</NavLink></li>
+		<li><NavLink to={'make an offer'} className={({isActive})=>(isActive? styles.menuListLinkActive : styles.menuListLink)}> Make an offer</NavLink></li>
 	  </ul>
 	</nav>
   );

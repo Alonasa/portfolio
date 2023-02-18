@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	text-transform: uppercase;
 }
 
 .menuList {
@@ -23,11 +24,7 @@
 
 .menuListLink {
 	text-decoration: none;
-}
-
-.menuListLink {
-	display: block;
-	position: relative;
+	color: #1400A2;
 }
 
 .menuListLink:hover {
@@ -36,15 +33,23 @@
 
 .menuListLinkActive {
 	color: #352983;
-	border-bottom: 2px solid #352983;
+	text-decoration: none;
+	border-bottom: 1px solid #1400A2;
 }
 
+.menuListLinkActive:after,
 .menuListLink:after {
 	content: '';
 	display: block;
 	width: 0;
-	height: 1px;
+	height: 2px;
 	background: #1400A2;
+	transition: width .3s;
+}
+
+.menuListLinkActive:hover::after,
+.menuListLink:hover::after{
+	width: 100%;
 	transition: width .3s;
 }
 
