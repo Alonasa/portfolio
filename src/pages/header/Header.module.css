@@ -62,10 +62,21 @@
 	transition: width .3s;
 }
 
+@media (min-width: 500px ) {
+	.hamburgerLines {
+		top: 5%;
+		left: 5%;
+	}
+}
+
 @media only screen and (min-width: 970px) {
 	.menu {
 		flex-direction: row;
 		align-items: baseline;
+	}
+
+	.hamburgerLines {
+		display: none;
 	}
 
 	.menuList {
