@@ -4,10 +4,12 @@ import { Contacts } from './Contacts/Contacts';
 import { Hire } from './Hire/Hire';
 import { Portfolio } from './Portfolio/Portfolio';
 import { Skills } from './Skills/Skills';
+import  styles from '../main/Main.module.css'
+
 
 export const Main = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <About/>
       <Skills/>
       <Portfolio/>

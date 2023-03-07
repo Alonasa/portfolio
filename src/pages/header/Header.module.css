@@ -75,10 +75,6 @@
 		align-items: baseline;
 	}
 
-	.hamburgerLines {
-		display: none;
-	}
-
 	.menuList {
 		flex-direction: row;
 		order: 0;
