@@ -1,10 +1,14 @@
 import React from 'react';
+import styles from '../Portfolio/Portfolio.module.css'
+import { Project } from './Project/Project';
 
 export const Portfolio = () => {
   return (
-	<div>
-	  <h2>My projects</h2>
-	  
+	<div className={styles.portfolio}>
+	  <h2 className={styles.portfolioTitle}>My Projects</h2>
+	  <Project/>
+	  <Project/>
+	  <Project/>
 	</div>
   );
 };
