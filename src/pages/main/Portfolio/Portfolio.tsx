@@ -3,7 +3,8 @@ import React from 'react';
 export const Portfolio = () => {
   return (
 	<div>
-	  Portfolio block
+	  <h2>My projects</h2>
+	  
 	</div>
   );
 };

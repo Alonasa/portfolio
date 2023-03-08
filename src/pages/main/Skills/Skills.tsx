@@ -15,6 +15,7 @@ const skills = [
 export const Skills = () => {
   return (
 	<div className={styles.skills}>
+	  <h2 className={styles.skillsTitle}>My skills</h2>
 	  {skills.map(skill => {
 	    return (
 	      <Skill key={skill.id} id={skill.id} logo={skill.logo} title={skill.title} description={skill.description}/>
