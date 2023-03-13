@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from '../Skill/Skill.module.css'
+
 
 type SkillType = {
   id: string
@@ -9,7 +11,7 @@ type SkillType = {
 
 export const Skill = (props: SkillType) => {
   return (
-	<div key={props.id}>
+	<div className={styles.skill} key={props.id}>
 	  <img src={props.logo} width={100} height={100} alt={props.title}></img>
 	  <h3>{props.title}</h3>
 	  <p>{props.description}</p>
