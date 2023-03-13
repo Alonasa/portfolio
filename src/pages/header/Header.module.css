@@ -1,5 +1,4 @@
 .menu {
-	padding: 2%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,7 +27,7 @@
 }
 
 .menuTitle {
-	margin: 0;
+	margin: 5px 0;
 }
 
 .menuListLink {
@@ -71,18 +70,27 @@
 
 @media only screen and (min-width: 970px) {
 	.menu {
+		margin: 0 auto;
+		width: 90vw;
 		flex-direction: row;
 		align-items: baseline;
 	}
 
 	.menuList {
-		flex-direction: row;
-		order: 0;
 		width: 30%;
+		flex-direction: row;
+		justify-content: flex-start;
+		order: 0;
+		font-size: 18px;
+	}
+
+	.menuLeft {
+		margin-right: auto;
 	}
 
 	.menuRight {
-		flex-shrink: 1;
+		margin-left: auto;
+		justify-content: flex-end;
 	}
 
 	.menuList li {
