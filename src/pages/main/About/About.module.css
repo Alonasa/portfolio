@@ -10,6 +10,14 @@
 
 @media (min-width: 768px) {
     .about {
-        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .picture {
+        margin: 0;
+    }
+
+    .description {
+        width: 42%;
     }
 }

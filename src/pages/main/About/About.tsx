@@ -6,7 +6,7 @@ export const About = () => {
   return (
 	<div className={styles.about}>
 	  <img className={styles.picture} src={logo192} alt={'Alona Skrypnyk photo'} width={300} height={500}/>
-	  <p>Hello! My name Alona Skrypnyk, I am frontend developer</p>
+	  <p className={styles.description}>Hello! My name Alona Skrypnyk, I am frontend developer</p>
 	</div>
   );
 };
