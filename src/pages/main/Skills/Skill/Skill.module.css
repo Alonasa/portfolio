@@ -1,6 +1,12 @@
 .skill {
-    padding: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
     width: 300px;
     box-sizing: border-box;
 }
 
+@media only screen and (min-width: 970px) {
+   .skill {
+       width: 250px;
+   }
+}
