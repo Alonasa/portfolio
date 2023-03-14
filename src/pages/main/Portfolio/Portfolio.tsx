@@ -6,9 +6,11 @@ export const Portfolio = () => {
   return (
 	<div className={styles.portfolio}>
 	  <h2 className={styles.portfolioTitle}>My Projects</h2>
-	  <Project/>
-	  <Project/>
-	  <Project/>
+	  <ul className={styles.portfolioList}>
+		<Project/>
+		<Project/>
+		<Project/>
+	  </ul>
 	</div>
   );
 };

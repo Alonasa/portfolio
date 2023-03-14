@@ -1,7 +1,43 @@
 .project {
-    margin: 15px;
+    margin: 20px 15px;
 }
 
 .projectInner {
+    text-align: left;
+}
 
+.projectPicture {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f3fc;
+    background-position: center;
+    background-size: cover;
+}
+
+.projectButton {
+    padding: 5px 20px;
+    background-color: #1400A2;
+    color: #faebd7;
+    border-radius: 3px;
+}
+
+.projectButton:hover {
+    background-color: #2304ff;
+}
+
+.projectButton:disabled {
+    background-color: #463b90;
+}
+
+.projectTitle {
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px)  {
+    .project {
+        width: 250px;
+    }
 }
