@@ -13,16 +13,16 @@ export const Header = () => {
   
   return (
 	<nav className={styles.menu}>
-	  <div onClick={setMenuClose}>
+	  <div className={styles.menuBurger} onClick={setMenuClose}>
 		{open ? <BurgerOpen/> : <BurgerClosed/>}
 	  </div>
 	  
-	  {open && <ul className={styles.menuList}>
+	  {open && <ul className={`${styles.menuList} ${styles.menuLeft}`}>
         <li><NavLink to={'skills'}
-                     className={({isActive}) => (isActive ? styles.menuListLinkActive : styles.menuListLink)}> Skills</NavLink>
+                     className={({isActive}) => (isActive ? styles.menuListLinkActive : styles.menuListLink)}>Skills</NavLink>
         </li>
         <li><NavLink to={'portfolio'}
-                     className={({isActive}) => (isActive ? styles.menuListLinkActive : styles.menuListLink)}> Portfolio</NavLink>
+                     className={({isActive}) => (isActive ? styles.menuListLinkActive : styles.menuListLink)}>Portfolio</NavLink>
         </li>
       </ul>}
 	  <div className={styles.menuLogo}>

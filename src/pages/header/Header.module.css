@@ -73,6 +73,7 @@
 		margin: 0 auto;
 		width: 90vw;
 		flex-direction: row;
+		justify-content: space-between;
 		align-items: baseline;
 	}
 
@@ -84,12 +85,14 @@
 		font-size: 18px;
 	}
 
+	.menuBurger {
+		display: none;
+	}
+
 	.menuLeft {
-		margin-right: auto;
 	}
 
 	.menuRight {
-		margin-left: auto;
 		justify-content: flex-end;
 	}
 
