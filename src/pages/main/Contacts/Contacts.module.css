@@ -1,0 +1,45 @@
+.contacts {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactsFluid {
+    padding: 20px 0;
+    background-color: #e4ddfb;
+}
+
+.contactsSender {
+    margin-bottom: 20px;
+}
+
+.contactsInput {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contactsTextarea {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+    .contactsSender {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contactsLabel {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactsButton {
+        width: 40%;
+        text-align: center;
+    }
+}
