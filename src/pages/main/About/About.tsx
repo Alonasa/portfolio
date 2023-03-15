@@ -4,7 +4,7 @@ import  styles from '../About/About.module.css'
 
 export const About = () => {
   return (
-	<div className={styles.about}>
+	<div className={`${styles.about} container`}>
 	  <img className={styles.picture} src={logo192} alt={'Alona Skrypnyk photo'} width={300} height={500}/>
 	  <p className={styles.description}>Hello! My name Alona Skrypnyk, I am frontend developer</p>
 	</div>

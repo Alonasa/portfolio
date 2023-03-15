@@ -17,21 +17,6 @@
     background-size: cover;
 }
 
-.projectButton {
-    padding: 5px 20px;
-    background-color: #1400A2;
-    color: #faebd7;
-    border-radius: 3px;
-}
-
-.projectButton:hover {
-    background-color: #2304ff;
-}
-
-.projectButton:disabled {
-    background-color: #463b90;
-}
-
 .projectTitle {
     text-align: center;
 }

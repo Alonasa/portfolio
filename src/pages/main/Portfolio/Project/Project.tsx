@@ -6,7 +6,7 @@ export const Project = () => {
   return (
 	<li className={styles.project}>
 	  <div className={styles.projectPicture}>
-		<a className={styles.projectButton}>Details</a>
+		<a className={'button'}>Details</a>
 	  </div>
 	  <div className={styles.projectInner}>
 		<h3 className={styles.projectTitle}>Todolist</h3>

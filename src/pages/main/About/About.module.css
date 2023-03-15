@@ -1,8 +1,9 @@
 .about {
-    margin: 40px 20px;
+    padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .picture {
@@ -19,6 +20,6 @@
     }
 
     .description {
-        width: 42%;
+        width: 45%;
     }
 }
